@@ -51,8 +51,8 @@ let topImageView = UIImageView()
     @IBAction func showpassword(_ sender: Any) {
         
         print("show password taped")
-        /*
-        if(iconClick == true) {
+        
+       /* if(iconClick == true) {
             passwordtext.secureTextEntry = false
         } else {
             passwordtext.secureTextEntry = true
@@ -129,7 +129,7 @@ let topImageView = UIImageView()
      topImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = false
      topImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
      topImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-    topImageView.heightAnchor.constraint(equalToConstant: 170).isActive = true
+     topImageView.heightAnchor.constraint(equalToConstant: 170).isActive = true
      
      topImageView.image = UIImage(named: "tsc")
 }

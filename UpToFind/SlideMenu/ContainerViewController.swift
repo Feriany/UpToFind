@@ -17,7 +17,7 @@ class ContainerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ConfigureHomeController()
-        view.backgroundColor = UIColor(red:27/255, green:14/255, blue:85/255, alpha: 1)
+       view.backgroundColor = UIColor(red:27/255, green:14/255, blue:85/255, alpha: 1)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{

@@ -49,16 +49,15 @@ var progressBarTimer: Timer!
    progressView.progress += 0.1
    progressView.setProgress(progressView.progress, animated: true)
    if(progressView.progress == 1.0)
-   {
-       
-       let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
-                             self.view.window?.rootViewController = homeViewController
-                             self.view.window?.makeKeyAndVisible()
-    
-    progressBarTimer.invalidate()
-   }
+   { progressBarTimer.invalidate()
+    transitionToLogin()
    }
     
     
-
+   }
+    func transitionToLogin(){
+    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
+    self.view.window?.rootViewController = homeViewController
+    self.view.window?.makeKeyAndVisible()
+}
 }

@@ -47,9 +47,9 @@ enum MenuOption :Int, CustomStringConvertible{
                switch self {
                    
                case .Home:
-                return UIImage(named: "profile") ?? UIImage()
+                return UIImage(named: "home") ?? UIImage()
                case .FindObject:
-                  return UIImage(named: "findoject") ?? UIImage()
+                  return UIImage(named: "findobjects") ?? UIImage()
                case .Profile:
                   return UIImage(named: "profils") ?? UIImage()
                case .Notification:

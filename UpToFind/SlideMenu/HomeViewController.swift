@@ -14,7 +14,7 @@ class HomeController: UIViewController {
     // MARK:-Init
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.backgroundColor = .white
+        view.backgroundColor = .white
         ConfigureNavigationBar()
     }
     // MARK:-Handlers

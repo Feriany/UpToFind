@@ -20,6 +20,8 @@
 		6328ECF123953EA40005AC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6328ECEF23953EA40005AC7E /* LaunchScreen.storyboard */; };
 		6328ED01239540350005AC7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328ED00239540340005AC7E /* SignUpViewController.swift */; };
 		6328ED032395403B0005AC7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328ED022395403B0005AC7E /* LoginViewController.swift */; };
+		6363DED3239872BF0086A104 /* TopScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363DED1239872BF0086A104 /* TopScreenViewController.swift */; };
+		6363DED4239872BF0086A104 /* TopScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6363DED2239872BF0086A104 /* TopScreenViewController.xib */; };
 		636F066F23954F39001CF728 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 636F066E23954F39001CF728 /* GoogleService-Info.plist */; };
 		6374B728239559570042BC82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374B727239559570042BC82 /* Constants.swift */; };
 		6374B72D239561250042BC82 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374B72C239561250042BC82 /* Utilities.swift */; };
@@ -46,6 +48,8 @@
 		6328ECF223953EA40005AC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6328ED00239540340005AC7E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6328ED022395403B0005AC7E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6363DED1239872BF0086A104 /* TopScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScreenViewController.swift; sourceTree = "<group>"; };
+		6363DED2239872BF0086A104 /* TopScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopScreenViewController.xib; sourceTree = "<group>"; };
 		636F066E23954F39001CF728 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6374B727239559570042BC82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6374B72C239561250042BC82 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -107,16 +111,17 @@
 				6328ECE423953EA00005AC7E /* AppDelegate.swift */,
 				63107F442395C7FD006E31E4 /* SlideMenu */,
 				6374B72B239560E50042BC82 /* Helpers */,
+				6363DED1239872BF0086A104 /* TopScreenViewController.swift */,
+				6363DED2239872BF0086A104 /* TopScreenViewController.xib */,
 				6328ECE823953EA00005AC7E /* ViewController.swift */,
 				6328ED00239540340005AC7E /* SignUpViewController.swift */,
-				6328ECEA23953EA00005AC7E /* Main.storyboard */,
-				63BF4F92239590B30088234D /* launchViewController.swift */,
 				6328ED022395403B0005AC7E /* LoginViewController.swift */,
+				63BF4F92239590B30088234D /* launchViewController.swift */,
+				6328ECEA23953EA00005AC7E /* Main.storyboard */,
 				6328ECED23953EA40005AC7E /* Assets.xcassets */,
 				6328ECEF23953EA40005AC7E /* LaunchScreen.storyboard */,
 				6328ECF223953EA40005AC7E /* Info.plist */,
-				6398ABE22397EEFC0088CE55 /* Nexa Bold.otf */,
-				6398ABE32397EEFC0088CE55 /* Nexa Light.otf */,
+				63B6D6472399078800563835 /* fonts */,
 				636F066E23954F39001CF728 /* GoogleService-Info.plist */,
 			);
 			path = UpToFind;
@@ -130,6 +135,15 @@
 				6374B72C239561250042BC82 /* Utilities.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63B6D6472399078800563835 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6398ABE32397EEFC0088CE55 /* Nexa Light.otf */,
+				6398ABE22397EEFC0088CE55 /* Nexa Bold.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		73DAA2DD2EEFF0C3A01542FC /* Pods */ = {
@@ -213,6 +227,7 @@
 				6328ECEE23953EA40005AC7E /* Assets.xcassets in Resources */,
 				636F066F23954F39001CF728 /* GoogleService-Info.plist in Resources */,
 				6398ABE42397EEFC0088CE55 /* Nexa Bold.otf in Resources */,
+				6363DED4239872BF0086A104 /* TopScreenViewController.xib in Resources */,
 				6328ECEC23953EA00005AC7E /* Main.storyboard in Resources */,
 				6398ABE52397EEFC0088CE55 /* Nexa Light.otf in Resources */,
 			);
@@ -273,6 +288,7 @@
 				63107F502395C99C006E31E4 /* MenuOption.swift in Sources */,
 				63107F482395C87A006E31E4 /* ContainerViewController.swift in Sources */,
 				63107F4A2395C8BA006E31E4 /* MenuController.swift in Sources */,
+				6363DED3239872BF0086A104 /* TopScreenViewController.swift in Sources */,
 				6328ED01239540350005AC7E /* SignUpViewController.swift in Sources */,
 				6328ECE923953EA00005AC7E /* ViewController.swift in Sources */,
 				6328ECE523953EA00005AC7E /* AppDelegate.swift in Sources */,
