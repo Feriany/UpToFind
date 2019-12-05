@@ -132,6 +132,7 @@ let topImageView = UIImageView()
      topImageView.heightAnchor.constraint(equalToConstant: 170).isActive = true
      
      topImageView.image = UIImage(named: "tsc")
+         view.sendSubviewToBack(topImageView)
 }
     
 }

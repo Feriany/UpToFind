@@ -28,7 +28,7 @@
 		6393B28B2397D9E4009A9907 /* ButView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6393B28A2397D9E4009A9907 /* ButView.swift */; };
 		6398ABE42397EEFC0088CE55 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6398ABE22397EEFC0088CE55 /* Nexa Bold.otf */; };
 		6398ABE52397EEFC0088CE55 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6398ABE32397EEFC0088CE55 /* Nexa Light.otf */; };
-		63BF4F93239590B30088234D /* launchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF4F92239590B30088234D /* launchViewController.swift */; };
+		63BF4F93239590B30088234D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF4F92239590B30088234D /* LaunchViewController.swift */; };
 		D96AB6CE363B9B8FEBB1299F /* Pods_UpToFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870F6F410AEB5F9B97E35AFC /* Pods_UpToFind.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		6393B28A2397D9E4009A9907 /* ButView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButView.swift; sourceTree = "<group>"; };
 		6398ABE22397EEFC0088CE55 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
 		6398ABE32397EEFC0088CE55 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
-		63BF4F92239590B30088234D /* launchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchViewController.swift; sourceTree = "<group>"; };
+		63BF4F92239590B30088234D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		870F6F410AEB5F9B97E35AFC /* Pods_UpToFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpToFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A001EF51A1AC1A7F3DEFA199 /* Pods-UpToFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpToFind.debug.xcconfig"; path = "Target Support Files/Pods-UpToFind/Pods-UpToFind.debug.xcconfig"; sourceTree = "<group>"; };
 		C4BB9CFD06E08AD3A16E6613 /* Pods-UpToFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpToFind.release.xcconfig"; path = "Target Support Files/Pods-UpToFind/Pods-UpToFind.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				6328ECE823953EA00005AC7E /* ViewController.swift */,
 				6328ED00239540340005AC7E /* SignUpViewController.swift */,
 				6328ED022395403B0005AC7E /* LoginViewController.swift */,
-				63BF4F92239590B30088234D /* launchViewController.swift */,
+				63BF4F92239590B30088234D /* LaunchViewController.swift */,
 				6328ECEA23953EA00005AC7E /* Main.storyboard */,
 				6328ECED23953EA40005AC7E /* Assets.xcassets */,
 				6328ECEF23953EA40005AC7E /* LaunchScreen.storyboard */,
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63107F4C2395C927006E31E4 /* Protocols.swift in Sources */,
-				63BF4F93239590B30088234D /* launchViewController.swift in Sources */,
+				63BF4F93239590B30088234D /* LaunchViewController.swift in Sources */,
 				6328ED032395403B0005AC7E /* LoginViewController.swift in Sources */,
 				63107F502395C99C006E31E4 /* MenuOption.swift in Sources */,
 				63107F482395C87A006E31E4 /* ContainerViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class launchViewController: UIViewController {
+class LaunchViewController: UIViewController {
 var progressBarTimer: Timer!
     
     @IBOutlet weak var progressView: UIProgressView!
@@ -30,7 +30,7 @@ var progressBarTimer: Timer!
        progressView.clipsToBounds = true
        progressView.layer.sublayers![1].cornerRadius = 10
        progressView.subviews[1].clipsToBounds = true
-       self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(launchViewController.updateProgressView), userInfo: nil, repeats: true)
+       self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(LaunchViewController.updateProgressView), userInfo: nil, repeats: true)
        
        progressView.progressTintColor = UIColor(red:68/255, green:33/255, blue:224/255, alpha: 1)
        progressView.trackTintColor = .white

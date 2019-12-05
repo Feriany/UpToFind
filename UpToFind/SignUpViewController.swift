@@ -24,7 +24,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setUpTextField()
         // Do any additional setup after loading the view.
-        //setTopImage()
+        setTopImage()
         
         
         
@@ -178,6 +178,7 @@ class SignUpViewController: UIViewController {
        topImageView.heightAnchor.constraint(equalToConstant: 130).isActive = true
         topImageView.contentMode = UIView.ContentMode.scaleAspectFill
         topImageView.image = UIImage(named: "tsc")
+        view.sendSubviewToBack(topImageView)
         
     }
    
