@@ -270,7 +270,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJx-7w-NIg">
-                                <rect key="frame" x="20" y="168" width="160" height="30"/>
+                                <rect key="frame" x="18" y="168" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JyZ-44-VkV"/>
                                 </constraints>
@@ -284,7 +284,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passworld" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gau-OK-RSI" customClass="TextFiledpassword" customModule="UpToFind" customModuleProvider="target">
                                 <rect key="frame" x="20" y="283" width="280" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Fz0-fa-TC9"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fz0-fa-TC9">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -292,18 +294,25 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4S-bO-EDN">
                                 <rect key="frame" x="20" y="223" width="280" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ugK-hv-lT9"/>
+                                    <constraint firstAttribute="height" constant="50" id="ugK-hv-lT9">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjD-XT-bAK">
-                                <rect key="frame" x="175" y="345" width="126" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjD-XT-bAK">
+                                <rect key="frame" x="169" y="345" width="132" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nEl-Wz-gxJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Forget Password?"/>
+                                <state key="normal" title="Forget Password?">
+                                    <color key="titleColor" red="0.43467378620000002" green="0.29224339129999999" blue="0.95592659710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBK-W2-TYv">
                                 <rect key="frame" x="58" y="345" width="103.5" height="30"/>
@@ -313,13 +322,21 @@
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="25"/>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUw-Bk-qoF">
-                                <rect key="frame" x="181" y="168" width="128" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUw-Bk-qoF">
+                                <rect key="frame" x="179" y="168" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OPF-9J-0Ma"/>
                                 </constraints>
-                                <state key="normal" title="Create an account"/>
+                                <state key="normal" title="Create an account">
+                                    <color key="titleColor" red="0.43467378620000002" green="0.29224339129999999" blue="0.95592659710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
                                 <connections>
                                     <action selector="createAccountButton:" destination="WT2-9d-pgn" eventType="touchUpInside" id="TW2-Fh-Olt"/>
                                 </connections>
@@ -339,7 +356,6 @@
                                 <rect key="frame" x="94" y="405" width="121" height="43"/>
                                 <color key="backgroundColor" red="0.43440270419999999" green="0.3200730383" blue="0.9397451282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="HMc-uh-R5C"/>
                                     <constraint firstAttribute="height" constant="43" id="LlU-fg-n8i">
                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                     </constraint>
@@ -399,7 +415,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                             <constraint firstItem="zHZ-Ep-fpf" firstAttribute="leading" secondItem="Zw2-kx-eOY" secondAttribute="trailing" constant="2" id="2HK-md-HIc"/>
-                            <constraint firstItem="tJx-7w-NIg" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="20" id="4A3-Za-7rP">
+                            <constraint firstItem="tJx-7w-NIg" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="18" id="4A3-Za-7rP">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
                             <constraint firstItem="cWv-6x-Guu" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="23" id="5YI-qy-067"/>
@@ -420,7 +436,9 @@
                             <constraint firstItem="LjD-XT-bAK" firstAttribute="top" secondItem="gau-OK-RSI" secondAttribute="bottom" constant="12" id="MOM-Yn-DYZ">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
-                            <constraint firstItem="39V-SO-GIq" firstAttribute="trailing" secondItem="CjY-X8-34Q" secondAttribute="trailing" constant="105" id="MlD-zI-xHQ"/>
+                            <constraint firstItem="39V-SO-GIq" firstAttribute="trailing" secondItem="CjY-X8-34Q" secondAttribute="trailing" constant="105" id="MlD-zI-xHQ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="130"/>
+                            </constraint>
                             <constraint firstItem="92J-Pp-Gfu" firstAttribute="top" secondItem="gau-OK-RSI" secondAttribute="bottom" constant="15" id="N80-ia-8NM">
                                 <variation key="heightClass=regular-widthClass=regular" constant="24"/>
                             </constraint>
@@ -442,7 +460,9 @@
                             <constraint firstItem="CjY-X8-34Q" firstAttribute="top" secondItem="ZBK-W2-TYv" secondAttribute="bottom" constant="30" id="eTQ-ML-Plz">
                                 <variation key="heightClass=regular-widthClass=regular" constant="68"/>
                             </constraint>
-                            <constraint firstItem="CjY-X8-34Q" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="94" id="fpK-jA-phC"/>
+                            <constraint firstItem="CjY-X8-34Q" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="94" id="fpK-jA-phC">
+                                <variation key="heightClass=regular-widthClass=regular" constant="130"/>
+                            </constraint>
                             <constraint firstItem="ZBK-W2-TYv" firstAttribute="top" secondItem="gau-OK-RSI" secondAttribute="bottom" constant="12" id="fwY-es-bfn">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
@@ -460,7 +480,7 @@
                             <constraint firstItem="q4S-bO-EDN" firstAttribute="leading" secondItem="39V-SO-GIq" secondAttribute="leading" constant="20" id="q9L-5R-7b2">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
-                            <constraint firstItem="LjD-XT-bAK" firstAttribute="leading" secondItem="ZBK-W2-TYv" secondAttribute="trailing" constant="13.5" id="vCT-kX-Kku"/>
+                            <constraint firstItem="LjD-XT-bAK" firstAttribute="leading" secondItem="ZBK-W2-TYv" secondAttribute="trailing" constant="7.5" id="vCT-kX-Kku"/>
                             <constraint firstItem="gau-OK-RSI" firstAttribute="centerX" secondItem="xM6-SZ-ckC" secondAttribute="centerX" id="ycO-J0-BFa"/>
                             <constraint firstItem="gau-OK-RSI" firstAttribute="centerY" secondItem="xM6-SZ-ckC" secondAttribute="centerY" constant="24" id="zEE-QL-TCm"/>
                         </constraints>
@@ -512,7 +532,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-tc-ku6">
                                 <rect key="frame" x="73" y="473.5" width="174" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="I FOUND AN OBJECT"/>
+                                <color key="tintColor" red="0.43467378620000002" green="0.29224339129999999" blue="0.95592659710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="I FOUND AN OBJECT">
+                                    <color key="titleColor" red="0.43467378620000002" green="0.29224339129999999" blue="0.95592659710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND YOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOd-D8-37K">
                                 <rect key="frame" x="88" y="169.5" width="145" height="31"/>

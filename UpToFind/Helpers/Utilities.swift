@@ -134,7 +134,7 @@ static func isPasswordValid(_ password : String) -> Bool {
     }
     
     static func styleButton(_ button : UIButton){
-        button.titleLabel?.font =  UIFont(name: "Nexa Light", size: 15)
+        //button.titleLabel?.font = UIFont(name: "Nexa Light", size: .)
         button.tintColor = UIColor(red:68/255, green:33/255, blue:224/255, alpha: 1)
     }
     
