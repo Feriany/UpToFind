@@ -48,11 +48,11 @@ let topImageView = UIImageView()
     }
     
     
-    @IBAction func showpassword(_ sender: Any) {
-        
+   @IBAction func showPasswords(_ sender: Any) {
+      /*
         print("show password taped")
         
-       /* if(iconClick == true) {
+        if(iconClick == true) {
             passwordtext.secureTextEntry = false
         } else {
             passwordtext.secureTextEntry = true

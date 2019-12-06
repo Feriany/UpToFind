@@ -9,15 +9,18 @@
 import UIKit
 
 class HomeController: UIViewController {
-    // MARK:-Properties
+   
     var delegate : HomeControllerDelegate?
-    // MARK:-Init
+    
+    let topImageView = UIImageView()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         ConfigureNavigationBar()
+        setTopImage()
     }
-    // MARK:-Handlers
+   
     @objc
     func handleMenuToggel(){
         delegate?.handleMenuToggle(forMenuOption: nil)
@@ -29,5 +32,20 @@ class HomeController: UIViewController {
         navigationItem.title = ""
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName:"butMenu"),style: .done, target: self, action: #selector(handleMenuToggel))
         
+    }
+    
+     func setTopImage() {
+           
+         view.addSubview(topImageView)
+        
+         topImageView.translatesAutoresizingMaskIntoConstraints = false
+         topImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+         topImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = false
+         topImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+         topImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+         topImageView.heightAnchor.constraint(equalToConstant: 170).isActive = true
+         
+         topImageView.image = UIImage(named: "tsc")
+             //view.sendSubviewToBack(topImageView)
     }
 }

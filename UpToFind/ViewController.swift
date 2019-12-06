@@ -16,7 +16,16 @@ let topImageView = UIImageView()
         setTopImage()
         // Do any additional setup after loading the view.
     }
+    @IBAction func LostObjButt(_ sender: Any) {
+        
+        let lostobjctViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.lostObjectViewController) as? LostObjectViewController
+                              
+                              self.view.window?.rootViewController = lostobjctViewController
+                              self.view.window?.makeKeyAndVisible()
+    }
     
+    @IBAction func FoundObjButt(_ sender: Any) {
+    }
     func setTopImage() {
          view.addSubview(topImageView)
          topImageView.translatesAutoresizingMaskIntoConstraints = false

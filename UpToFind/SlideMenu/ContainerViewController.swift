@@ -9,11 +9,11 @@
 import UIKit
 
 class ContainerController: UIViewController {
-    // MARK:-Properties
+    
     var menuController: MenuController!
     var centreController : UIViewController!
     var isExpanded = false
-    // MARK:-Init
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         ConfigureHomeController()
@@ -29,7 +29,7 @@ class ContainerController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return isExpanded
     }
-    // MARK:-Handlers
+    
     
     func ConfigureHomeController()  {
         let homeController = HomeController()
@@ -55,12 +55,12 @@ class ContainerController: UIViewController {
        }
     func animatedPanel(ShouldExpand: Bool, menuOption :MenuOption?){
         if ShouldExpand {
-            //Show Menu
+            
             UIView.animate(withDuration: 0.5, delay: 0,usingSpringWithDamping: 10, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
                 self.centreController.view.frame.origin.x = self.centreController.view.frame.width - 100
             }, completion: nil)
         }else{
-            // Hide Menu
+            
            
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
                 self.centreController.view.frame.origin.x = 0

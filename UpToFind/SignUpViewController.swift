@@ -24,14 +24,11 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setUpTextField()
         // Do any additional setup after loading the view.
-        //setTopImage()
+        setTopImage()
+        
+        
 
     }
-    
-    
-    
-    
-    
     
     func setUpTextField() {
         let icon_username = UIImage(named: "maillogin")
@@ -172,9 +169,9 @@ class SignUpViewController: UIViewController {
     topImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = false
     topImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
     topImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-       topImageView.heightAnchor.constraint(equalToConstant: 130).isActive = true
+       topImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         topImageView.contentMode = UIView.ContentMode.scaleAspectFill
-        topImageView.image = UIImage(named: "tsc")
+        topImageView.image = UIImage(named: "signtop")
         view.sendSubviewToBack(topImageView)
         
     }

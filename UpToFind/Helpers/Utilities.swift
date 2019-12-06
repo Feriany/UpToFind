@@ -60,9 +60,7 @@ class Utilities {
         
     }
     
-    @IBAction func showPassword(){
-        print("show password tapped")
-    }
+    
     
     static func styleTextFields(_ textfield:UITextField, andImage img: UIImage,andrightbut butImg: UIImage) {
         
@@ -106,11 +104,16 @@ class Utilities {
         let button = UIButton(type: .custom)
         
         button.setImage(butImg, for: .normal)
-        button.imageEdgeInsets = UIEdgeInsets(top: 4, left: -5, bottom: 4, right: 12)
-         button.frame = CGRect(x: CGFloat(textfield.frame.size.width - 20), y: CGFloat(5), width: CGFloat(20), height: CGFloat(20))
+        button.imageEdgeInsets = UIEdgeInsets(top: 3, left: -3, bottom: 4, right: 12)
+         button.frame = CGRect(x: CGFloat(textfield.frame.size.width - 15), y: CGFloat(5), width: CGFloat(10), height: CGFloat(10))
         button.addTarget(self, action: #selector(self.showPassword), for: .touchUpInside)
         textfield.rightView = button
         textfield.rightViewMode = .always
+    }
+    
+    
+    @IBAction func showPassword(){
+        print("Show password pressed")
     }
     
 static func isPasswordValid(_ password : String) -> Bool {
