@@ -24,10 +24,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setUpTextField()
         // Do any additional setup after loading the view.
-        setTopImage()
-        
-        
-        
+        //setTopImage()
 
     }
     
