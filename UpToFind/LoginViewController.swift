@@ -83,7 +83,10 @@ let topImageView = UIImageView()
     
     @IBAction func createAccountButton(_ sender: Any) {
         
+        let signupViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.signupViewController) as? SignUpViewController
        
+       self.view.window?.rootViewController = signupViewController
+       self.view.window?.makeKeyAndVisible()
     }
     
     

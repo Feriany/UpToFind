@@ -10,9 +10,9 @@
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="UpToFind" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="UpToFind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lj-bm-8HW" customClass="TextFiledmail" customModule="UpToFind" customModuleProvider="target">
@@ -104,10 +104,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NEW ACCOUNT " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-a4-NO5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NEW ACCOUNT " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-a4-NO5">
                                 <rect key="frame" x="90" y="4" width="214" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="j8M-S6-F9P"/>
+                                    <constraint firstAttribute="height" constant="38" id="j8M-S6-F9P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,13 +132,13 @@
                             <constraint firstItem="rpB-L3-qqn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="5Zs-Tx-v3f">
                                 <variation key="heightClass=regular-widthClass=regular" constant="11"/>
                             </constraint>
-                            <constraint firstItem="nh8-a4-NO5" firstAttribute="leading" secondItem="rpB-L3-qqn" secondAttribute="trailing" constant="31" id="7gD-JD-6dr">
+                            <constraint firstItem="nh8-a4-NO5" firstAttribute="leading" secondItem="rpB-L3-qqn" secondAttribute="trailing" constant="15" id="7gD-JD-6dr">
                                 <variation key="heightClass=regular-widthClass=regular" constant="220"/>
                             </constraint>
                             <constraint firstItem="UUd-d6-dFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="9in-YA-Po3">
                                 <variation key="heightClass=regular-widthClass=regular" constant="140"/>
                             </constraint>
-                            <constraint firstItem="s3W-nM-k47" firstAttribute="top" secondItem="nh8-a4-NO5" secondAttribute="bottom" constant="1" id="BLI-F7-FSC">
+                            <constraint firstItem="s3W-nM-k47" firstAttribute="top" secondItem="nh8-a4-NO5" secondAttribute="bottom" constant="3" id="BLI-F7-FSC">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s3W-nM-k47" secondAttribute="trailing" constant="98" id="Brv-LT-K07"/>
@@ -184,7 +184,7 @@
                             <constraint firstItem="2lj-bm-8HW" firstAttribute="top" secondItem="s3W-nM-k47" secondAttribute="bottom" constant="11" id="Wq2-03-k6T">
                                 <variation key="heightClass=regular-widthClass=regular" constant="74"/>
                             </constraint>
-                            <constraint firstItem="glH-eG-O45" firstAttribute="top" secondItem="nh8-a4-NO5" secondAttribute="bottom" constant="86" id="bgf-Ij-sxD">
+                            <constraint firstItem="glH-eG-O45" firstAttribute="top" secondItem="nh8-a4-NO5" secondAttribute="bottom" constant="88" id="bgf-Ij-sxD">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="UUd-d6-dFu" firstAttribute="top" secondItem="L00-BH-qBk" secondAttribute="bottom" constant="20" id="dFZ-rM-r7M">
@@ -193,7 +193,7 @@
                             <constraint firstItem="2lj-bm-8HW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="enr-u3-UR0">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nh8-a4-NO5" secondAttribute="trailing" constant="83" id="jSm-2I-vl7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nh8-a4-NO5" secondAttribute="trailing" constant="16" id="jSm-2I-vl7"/>
                             <constraint firstItem="pos-Sk-mp7" firstAttribute="top" secondItem="brB-Sc-ge7" secondAttribute="bottom" constant="5" id="osc-9C-C38">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
@@ -202,7 +202,7 @@
                             <constraint firstItem="UAM-Mx-TVT" firstAttribute="top" secondItem="pos-Sk-mp7" secondAttribute="bottom" constant="5" id="tff-UJ-4pH">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
-                            <constraint firstItem="nh8-a4-NO5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="w9U-zD-QWv"/>
+                            <constraint firstItem="nh8-a4-NO5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="w9U-zD-QWv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -320,7 +320,6 @@
                                 <state key="normal" title="Create an account"/>
                                 <connections>
                                     <action selector="createAccountButton:" destination="WT2-9d-pgn" eventType="touchUpInside" id="TW2-Fh-Olt"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="j3G-LI-qUd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92J-Pp-Gfu">
